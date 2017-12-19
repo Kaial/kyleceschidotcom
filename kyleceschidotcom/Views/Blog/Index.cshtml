@@ -1,0 +1,13 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@foreach(var post in ViewBag.Posts)
+{
+   <h4>@post.Title</h4>
+   <h5>@post.Created</h5>
+   <p>@post.Content</p>
+}
+
